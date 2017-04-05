@@ -5,7 +5,8 @@
 int main (int argc, char *argv[]) {
     int opt;
     FILE *fp_input;
-
+    
+    // Detect the end of the options.
     while((opt = getopt(argc, argv, "i:")) != -1 ) {
         switch(opt) {
             case 'i': 
@@ -16,14 +17,21 @@ int main (int argc, char *argv[]) {
                 exit(1);
         }
     }
+
+    // Input file open
     if(fp_input == NULL){
         printf("Failed to open input file for -i \n",);
         exit(1);
     }
 
+    // Write an algorithm program in this section.
+    
 
 
 
+    // Input file close
     fclose(fp_input);
+
+
 	return 0;
 }
