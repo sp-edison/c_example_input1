@@ -8,19 +8,20 @@ int main (int argc, char *argv[]) {
     
     // Detect the end of the options.
     while((opt = getopt(argc, argv, "i:")) != -1 ) {
+
         switch(opt) {
             case 'i': 
                 fp_input = fopen(optarg,"r");
                 break;
             default:
-                printf("Usage: %s [-t nsecs] [-n] name\n", argv[0]);
+                printf("Usage: %s -i [filepath] \n", argv[0]);
                 exit(1);
         }
     }
 
     // Input file open
     if(fp_input == NULL){
-        printf("Failed to open input file for -i \n",);
+        printf("Failed to open input file for -i \n");
         exit(1);
     }
 
