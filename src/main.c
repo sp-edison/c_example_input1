@@ -31,7 +31,6 @@ int main (int argc, char *argv[]) {
 
     // Input file close
     fclose(fp_input);
-
-
-	return 0;
+    return 0;
+	
 }
