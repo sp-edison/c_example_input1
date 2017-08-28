@@ -12,7 +12,7 @@ int main (int argc, char *argv[]) {
         switch(opt) {
             case 'i': 
                 fp_input = fopen(optarg,"r");
-				printf("Succeed to open inputfile. Path: %s\n", optarg);
+		printf("Succeed to open inputfile. Path: %s\n", optarg);
                 break;
             default:
                 printf("Usage: %s -i [filepath] \n", argv[0]);
