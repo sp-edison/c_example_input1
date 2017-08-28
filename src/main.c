@@ -12,6 +12,7 @@ int main (int argc, char *argv[]) {
         switch(opt) {
             case 'i': 
                 fp_input = fopen(optarg,"r");
+				printf("Succeed to open inputfile. Path: %s\n", optarg);
                 break;
             default:
                 printf("Usage: %s -i [filepath] \n", argv[0]);
@@ -23,7 +24,7 @@ int main (int argc, char *argv[]) {
     if(fp_input == NULL){
         printf("Failed to open input file for -i \n");
         exit(1);
-    }
+    } 
 
     // Write an algorithm program in this section.
     
