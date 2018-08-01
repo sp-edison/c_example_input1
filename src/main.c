@@ -20,7 +20,7 @@ int main (int argc, char *argv[]) {
 				break;
 			default:
 				printf("Usage: %s -i [filepath] \n", argv[0]);
-				exit(1);
+				return -1;
 		}
 	}
 
