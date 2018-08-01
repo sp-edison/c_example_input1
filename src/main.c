@@ -24,12 +24,6 @@ int main (int argc, char *argv[]) {
 		}
 	}
 
-	// Input file open
-	if(fp_input == NULL){
-		printf("Failed to open input file for -i \n");
-		exit(1);
-	} 
-
 	// Write an algorithm program in this section.
 
 	while(1) {
