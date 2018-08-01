@@ -12,10 +12,10 @@ int main (int argc, char *argv[]) {
 		switch(opt) {
 			case 'i': 
 				if((fp_input = fopen(optarg,"r")) == NULL ) {
-					fprintf(stderr, "Error opening file: %s\n", optarg);
+					fprintf(stderr, "Error opening inputfile Path: %s\n", optarg);
 					return -1;
 				} else {
-					printf("Succeed to open inputfile. Path: %s\n", optarg);
+					printf("Succeed to open inputfile Path: %s\n", optarg);
 				}
 				break;
 			default:
