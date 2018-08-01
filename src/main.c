@@ -5,6 +5,7 @@
 int main (int argc, char *argv[]) {
     int opt;
     FILE *fp_input;
+	char buf_string[256];
     
     // Detect the end of the options.
     while((opt = getopt(argc, argv, "i:")) != -1 ) {
@@ -28,8 +29,12 @@ int main (int argc, char *argv[]) {
 
     // Write an algorithm program in this section.
     
-
-
+	while(1) {
+		fscanf(fp_input, "%s", buf_string);
+        if(feof(fp_input))
+            break;
+		printf("%s\n", buf_string);
+	}
 
     // Input file close
     fclose(fp_input);
